@@ -1,33 +1,32 @@
-1.const Discord = require('discord.js');
-2.const client = new Discord.Client();
-3. 
-4.client.on('ready', () => {
-5.  console.log(`Logged in as ${client.user.tag}!`);
-6.client.user.setGame(` اكتب اي شي هنا  `,"http://twitch.tv/S-F")
-7.  console.log('')
-8.  console.log('')
-9.  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-10.  console.log(`[Start] ${new Date()}`);
-11.  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
-12.  console.log('')
-13.  console.log('╔[════════════════════════════════════]╗');
-14.  console.log(`Logged in as * [ " ${client.user.username} " ]`);
-15.  console.log('')
-16.  console.log('Informations :')
-17.  console.log('')
-18.  console.log(`servers! [ " ${client.guilds.size} " ]`);
-19.  console.log(`Users! [ " ${client.users.size} " ]`);
-20.  console.log(`channels! [ " ${client.channels.size} " ]`);
-21.  console.log('╚[════════════════════════════════════]╝')
-22.  console.log('')
-23.  console.log('╔[════════════]╗')
-24.  console.log(' Bot Is Online ')
-25.  console.log('╚[════════════]╝')
-26.  console.log('')
-27.  console.log('')
-28.});
-29. 
-30. 
+const Discord = require('discord.js');
+const client = new Discord.Client();
+ 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(` اكتب اي شي هنا  `,"http://twitch.tv/S-F")
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log(`[Start] ${new Date()}`);
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`channels! [ " ${client.channels.size} " ]`);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online ')
+  console.log('╚[════════════]╝')
+  console.log('').  console.log('')
+});
+ 
+ 
 client.on('message', message => {
               if(!message.channel.guild) return;
     if(message.content.startsWith('^bc')) {
@@ -66,7 +65,7 @@ client.on('message', message => {
     })
     }
     })
-71. 
-72. 
-73. 
-74.client.login(process.env.BOT_TOKEN);
+ 
+ 
+ 
+client.login(process.env.BOT_TOKEN);
