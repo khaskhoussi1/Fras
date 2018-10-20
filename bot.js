@@ -28,14 +28,15 @@ client.user.setGame(` اكتب اي شي هنا  `,"http://twitch.tv/S-F")
 });
 
 client.on('message', message => {
+var prefix = "->"
               if(!message.channel.guild) return;
     if(message.content.startsWith('^bc')) {
-    if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
+    if(!message.channel.guild) return message.channel.send('هذا الأمر فقط للسيرفرات').then(m => m.delete(5000));
+  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('للأسف لا تمتلك صلاحية ADMINISTRATOR' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
     let copy = "SkelBot";
-    let request = `Requested By ${message.author.username}`;
-    if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لأرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
+    let request = Requested By ${message.author.username};
+    if (!args) return message.reply('يجب عليك كتابة كلمة او جملة لأرسال البرودكاست');message.channel.send(هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست: \ ${args}).then(msg => {
     msg.react('✅')
     .then(() => msg.react('❌'))
     .then(() =>msg.react('✅'))
@@ -45,7 +46,7 @@ client.on('message', message => {
        let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
     let reaction2 = msg.createReactionCollector(reaction2Filter, { time: 12000 });
     reaction1.on("collect", r => {
-    message.channel.send(`☑ |   ${message.guild.members.size} يتم أرسال البرودكاست الى عضو `).then(m => m.delete(5000));
+    message.channel.send(:ballot_box_with_check: |   ${message.guild.members.size} يتم أرسال البرودكاست الى عضو ).then(m => m.delete(5000));
     message.guild.members.forEach(m => {
     var bc = new
        Discord.RichEmbed()
@@ -59,7 +60,7 @@ client.on('message', message => {
     })
     })
     reaction2.on("collect", r => {
-    message.channel.send(`**تم الغاء البرودكاست**`).then(m => m.delete(5000));
+    message.channel.send(تم الغاء البرودكاست).then(m => m.delete(5000));
     msg.delete();
     })
     })
