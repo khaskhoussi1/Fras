@@ -1,35 +1,35 @@
-1.{
-2.  "name": "Heroku",
-3.  "version": "2.1.0",
-4.  "description": "",
-5.  "main": "bot.js",
-6.  "scripts": {
-7.    "start": "node bot.js"
-8.  },
-9.  "dependencies": {
-10.    "ascii-data-table": "^2.1.1",
-11.    "canvas": "^1.6.11",
-12.    "dateformat": "^3.0.3",
-13.    "discord.js": "^11.3.2",
-14.    "express": "^4.16.3",
-15.    "ffmpeg": "0.0.4",
-16.    "ffmpeg-binaries": "^3.2.2-3",
-17.    "fs": "0.0.2",
-18.    "get-youtube-id": "^1.0.0",
-19.    "jimp": "^0.2.28",
-20.    "moment": "^2.22.1",
-21.    "ms": "^2.1.1",
-22.    "opusscript": "0.0.6",
-23.    "quick.db": "^6.2.0",
-24.    "request": "^2.85.0",
-25.    "simple-youtube-api": "^5.0.2",
-26.    "snekfetch": "^3.6.4",
-27.    "sqlite": "^2.9.1",
-28.    "sqlite3": "^4.0.0",
-29.    "youtube-info": "^1.2.0",
-30.    "ytdl-core": "^0.20.3"
-31.  },
-32.  "engines": {
-33.    "node": "8.4.0"
-34.  }
-35.}
+{
+  "name": "Heroku",
+  "version": "2.1.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "ascii-data-table": "^2.1.1",
+    "canvas": "^1.6.11",
+    "dateformat": "^3.0.3",
+    "discord.js": "^11.3.2",
+    "express": "^4.16.3",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "fs": "0.0.2",
+    "get-youtube-id": "^1.0.0",
+    "jimp": "^0.2.28",
+    "moment": "^2.22.1",
+    "ms": "^2.1.1",
+    "opusscript": "0.0.6",
+    "quick.db": "^6.2.0",
+    "request": "^2.85.0",
+    "simple-youtube-api": "^5.0.2",
+    "snekfetch": "^3.6.4",
+    "sqlite": "^2.9.1",
+    "sqlite3": "^4.0.0",
+    "youtube-info": "^1.2.0",
+    "ytdl-core": "^0.20.3"
+  },
+  "engines": {
+    "node": "8.4.0"
+  }
+}
